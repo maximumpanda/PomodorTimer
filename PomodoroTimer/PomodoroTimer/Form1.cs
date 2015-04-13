@@ -1,8 +1,8 @@
 ﻿using System;
-using System.Windows.Forms;
 using System.Media;
+using System.Windows.Forms;
 
-namespace Pomodor_Timer
+namespace PomodoroTimer
 {
     public partial class Form1 : Form
     {
@@ -11,7 +11,7 @@ namespace Pomodor_Timer
         bool Break = false;
         public Form1()
         {
-            InitializeComponent(); 
+            InitializeComponent();
         }
 
         private void StartBtn_Click(object sender, EventArgs e)
@@ -35,7 +35,7 @@ namespace Pomodor_Timer
         {
             this.NewClock.UpdateClock();
             this.TimerLabel.Text = this.NewClock.GetTime();
-            
+
             if (this.Break)
             {
                 if (this.NewClock.Minutes >= 4)

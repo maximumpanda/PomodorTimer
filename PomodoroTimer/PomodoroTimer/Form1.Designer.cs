@@ -1,4 +1,4 @@
-﻿namespace Pomodor_Timer
+﻿namespace PomodoroTimer
 {
     partial class Form1
     {
